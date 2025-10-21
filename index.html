@@ -18,7 +18,7 @@
   <!-- Header -->
   <header>
     <div class="logo">
-      <img src="logo.png" alt="S y S Servicios Logo">
+      <img src="logo1.png" alt="S y S Servicios Logo">
     </div>
     <nav class="navbar">
 
@@ -29,8 +29,8 @@
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#quienes-somos">Quiénes Somos</a></li>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#clientes">Clientes</a></li>
         <li><a href="#personal">Personal</a></li>
+        <li><a href="#clientes">Clientes</a></li>
         <li><a href="#trabajos">Trabajos Realizados</a></li>
         <li><a href="#contacto">Contáctanos</a></li>
         <li><a href="#mapa">Ubicación</a></li>
@@ -156,28 +156,59 @@
 
   <!--Trabajos Realizados-->
 
-  <section id="trabajos" class="section">
-    <div class="container">
-      <h2 data-aos="fade-up">Trabajos Realizados</h2>
-  
-      <div data-aos="fade-up" class="trabajo">
-        <img src="img/trabajo1.jpg" alt="Trabajo 1">
+<section id="trabajos" class="section">
+  <div class="container">
+    <h2>Trabajos Realizados</h2>
+
+    <div class="trabajos-grid">
+
+      <!--  TRABAJO 1 -->
+      <div class="trabajo" data-galeria="1">
+        <img src="img/trabajo1a.jpg" alt="Trabajo 1 - Mantenimiento de buque">
         <div class="trabajo-info">
           <h3>Mantenimiento de buque</h3>
-          <p>Realizamos la limpieza y mantenimiento completo del casco de un buque de carga internacional.</p>
+          <p>Limpieza y mantenimiento del casco de un buque internacional.</p>
+        </div>
+        <!-- Galería oculta -->
+        <div class="galeria-oculta">
+          <img src="img/trabajo1a.jpg" alt="">
+          <img src="img/trabajo1b.jpg" alt="">
+          <img src="img/trabajo1c.jpg" alt="">
+          <img src="img/trabajo1d.jpg" alt="">
+          <img src="img/trabajo1e.jpg" alt="">
+          <img src="img/trabajo1f.jpg" alt="">
         </div>
       </div>
-  
-      <div data-aos="fade-up" class="trabajo">
-        <img src="img/trabajo2.jpg" alt="Trabajo 2">
+
+      <!--  TRABAJO 2 -->
+      <div class="trabajo" data-galeria="2">
+        <img src="img/trabajo2a.jpg" alt="Trabajo 2 - Planta industrial">
         <div class="trabajo-info">
           <h3>Limpieza en planta industrial</h3>
-          <p>Servicio integral de limpieza y desinfección en una planta de producción automotriz.</p>
+          <p>Servicio integral de limpieza y desinfección industrial.</p>
+        </div>
+        <!-- Galería oculta -->
+        <div class="galeria-oculta">
+          <img src="img/trabajo2a.jpg" alt="">
+          <img src="img/trabajo2b.jpg" alt="">
+          <img src="img/trabajo2c.jpg" alt="">
         </div>
       </div>
-  
+
     </div>
-  </section>
+  </div>
+
+  <!--  LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="cerrar" id="cerrar">&times;</span>
+    <span class="flecha izq" id="prev">&#10094;</span>
+    <img id="imagenAmpliada" src="">
+    <span class="flecha der" id="next">&#10095;</span>
+  </div>
+</section>
+
+
+
 
   <!-- Contacto -->
   <section id="contacto" class="contact">
@@ -245,6 +276,6 @@
     });
 
   </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
