@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Básico -->
   <title>S&S Servicios Navales e Industriales S.R.L.</title>
+  <meta name="description" content="Especialistas en reparaciones navales, mantenimiento mecánico, fabricación de estructuras e instalaciones industriales con más de 11 años de trayectoria en Argentina.">
+  <meta name="keywords" content="reparaciones navales, mantenimiento mecánico, estructuras industriales, espesores por ultrasonido, tintas penetrantes, Santa Fe, Villa Gobernador Gálvez, San Lorenzo, Buenos Aires">
+  <meta name="author" content="S&S Servicios Navales e Industriales S.R.L.">
+  
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="S&S Servicios Navales e Industriales S.R.L.">
+  <meta property="og:description" content="Expertos en servicios de reparación naval, industria metalmecánica y mantenimiento. Resultados confiables y de calidad garantizada.">
+  <meta property="og:image" content="./logo1.png">
+  <meta property="og:locale" content="es_AR">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -22,18 +34,19 @@
     </div>
     <nav class="navbar">
 
-      <button onclick="document.querySelector('.nav-links').classList.toggle('show')">
-        ☰ Menú
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.add('show')">
+        <i class="fas fa-bars"></i>
       </button>
       <ul class="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#quienes-somos">Quiénes Somos</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#personal">Personal</a></li>
-        <li><a href="#clientes">Clientes</a></li>
-        <li><a href="#trabajos">Trabajos Realizados</a></li>
-        <li><a href="#contacto">Contáctanos</a></li>
-        <li><a href="#mapa">Ubicación</a></li>
+        <li class="close-menu-item"><button class="close-menu" onclick="document.querySelector('.nav-links').classList.remove('show')"><i class="fas fa-times"></i></button></li>
+        <li><a href="#inicio" onclick="document.querySelector('.nav-links').classList.remove('show')">Inicio</a></li>
+        <li><a href="#quienes-somos" onclick="document.querySelector('.nav-links').classList.remove('show')">Quiénes Somos</a></li>
+        <li><a href="#servicios" onclick="document.querySelector('.nav-links').classList.remove('show')">Servicios</a></li>
+        <li><a href="#personal" onclick="document.querySelector('.nav-links').classList.remove('show')">Personal</a></li>
+        <li><a href="#clientes" onclick="document.querySelector('.nav-links').classList.remove('show')">Clientes</a></li>
+        <li><a href="#trabajos" onclick="document.querySelector('.nav-links').classList.remove('show')">Trabajos Realizados</a></li>
+        <li><a href="#contacto" onclick="document.querySelector('.nav-links').classList.remove('show')">Contáctanos</a></li>
+        <li><a href="#mapa" onclick="document.querySelector('.nav-links').classList.remove('show')">Ubicación</a></li>
       </ul>
     </nav>
 
@@ -124,16 +137,16 @@
       <h2>Nuestros Clientes</h2>
       <div class="clientes-grid"  >
         <div class="cliente" data-aos="fade-up">
-          <img src="cliente1.png" alt="Bunge">
+          <img loading="lazy" src="cliente1.png" alt="Bunge">
         </div>
         <div class="cliente" data-aos="fade-up" >
-          <img src="cliente2.png" alt="UABL">
+          <img loading="lazy" src="cliente2.png" alt="UABL">
         </div>
         <div class="cliente" data-aos="fade-up" >
-          <img src="cliente3.png" alt="Ultrapetrol">
+          <img loading="lazy" src="cliente3.png" alt="Ultrapetrol">
         </div>
         <div class="cliente" data-aos="fade-up" >
-          <img src="cliente4.png" alt="Terminales y Servicios">
+          <img loading="lazy" src="cliente4.png" alt="Terminales y Servicios">
         </div>
         <div class="cliente" data-aos="fade-up" >
           
@@ -164,143 +177,143 @@
 
       <!--  TRABAJO 1 -->
       <div class="trabajo" data-galeria="1">
-        <img src="img/t1/trabajo1a.jpg" alt="">
+        <img loading="lazy" src="img/t1/trabajo1a.jpg" alt="Reemplazo de nueva descarga con ducto vulcanizado">
         <div class="trabajo-info">
           <h4>Reemplazo de nueva descarga con ducto vulcanizado</h4>
         </div>
         <!-- Galería oculta -->
         <div class="galeria-oculta">
-          <img src="img/t1/trabajo1a.jpg" alt="">
-          <img src="img/t1/trabajo1b.jpg" alt="">
-          <img src="img/t1/trabajo1c.jpg" alt="">
-          <img src="img/t1/trabajo1d.jpg" alt="">
-          <img src="img/t1/trabajo1e.jpg" alt="">
-          <img src="img/t1/trabajo1f.jpg" alt="">
+          <img loading="lazy" src="img/t1/trabajo1a.jpg" alt="Reemplazo de nueva descarga con ducto vulcanizado">
+          <img loading="lazy" src="img/t1/trabajo1b.jpg" alt="">
+          <img loading="lazy" src="img/t1/trabajo1c.jpg" alt="">
+          <img loading="lazy" src="img/t1/trabajo1d.jpg" alt="">
+          <img loading="lazy" src="img/t1/trabajo1e.jpg" alt="">
+          <img loading="lazy" src="img/t1/trabajo1f.jpg" alt="">
         </div>
       </div>
 
       <div class="trabajo" data-galeria="2">
-        <img src="img/t2/trabajo2a.jpg" alt="">
+        <img loading="lazy" src="img/t2/trabajo2a.jpg" alt="Medición de espesores en casco y control de cadena y grilletes">
         <div class="trabajo-info">
           <h4>Medición de espesores en casco y control de cadena y grilletes</h4>
         </div>
         <!-- Galería oculta -->
         <div class="galeria-oculta">
-          <img src="img/t2/trabajo2a.jpg" alt="">
-          <img src="img/t2/trabajo2b.jpg" alt="">
-          <img src="img/t2/trabajo2c.jpg" alt="">
-          <img src="img/t2/trabajo2d.jpg" alt="">
-          <img src="img/t2/trabajo2e.jpg" alt="">
+          <img loading="lazy" src="img/t2/trabajo2a.jpg" alt="Medición de espesores en casco y control de cadena y grilletes">
+          <img loading="lazy" src="img/t2/trabajo2b.jpg" alt="">
+          <img loading="lazy" src="img/t2/trabajo2c.jpg" alt="">
+          <img loading="lazy" src="img/t2/trabajo2d.jpg" alt="">
+          <img loading="lazy" src="img/t2/trabajo2e.jpg" alt="">
         </div>
       </div>
 
       <div class="trabajo" data-galeria="3">
-        <img src="img/t3/trabajo3a.jpg" alt="">
+        <img loading="lazy" src="img/t3/trabajo3a.jpg" alt="Instalación de líneas de vidas certificadas y normalizadas">
         <div class="trabajo-info">
           <h4>Instalación de lineas de vidas certificadas y normalizadas</h4>
         </div>
         <!-- Galería oculta -->
         <div class="galeria-oculta">
-          <img src="img/t3/trabajo3a.jpg" alt="">
-          <img src="img/t3/trabajo3b.jpg" alt="">
-          <img src="img/t3/trabajo3c.jpg" alt="">
-          <img src="img/t3/trabajo3d.jpg" alt="">
+          <img loading="lazy" src="img/t3/trabajo3a.jpg" alt="Instalación de líneas de vidas certificadas y normalizadas">
+          <img loading="lazy" src="img/t3/trabajo3b.jpg" alt="">
+          <img loading="lazy" src="img/t3/trabajo3c.jpg" alt="">
+          <img loading="lazy" src="img/t3/trabajo3d.jpg" alt="">
         </div>
       </div>
 
       <div class="trabajo" data-galeria="4">
-        <img src="img/t4/trabajo4 (1).jpg" alt="">
+        <img loading="lazy" src="img/t4/trabajo4 (1).jpg" alt="Montaje de estructuras y pasarelas galvanizadas">
         <div class="trabajo-info">
           <h4>Montaje de estructuras y pasarelas galvanizadas</h4>
         </div>
         <!-- Galería oculta -->
         <div class="galeria-oculta">
-          <img src="img/t4/trabajo4 (1).jpg" alt="">
-          <img src="img/t4/trabajo4 (2).jpg" alt="">
-          <img src="img/t4/trabajo4 (3).jpg" alt="">
-          <img src="img/t4/trabajo4 (4).jpg" alt="">
-          <img src="img/t4/trabajo4 (5).jpg" alt="">
-          <img src="img/t4/trabajo4 (6).jpg" alt="">
-          <img src="img/t4/trabajo4 (7).jpg" alt="">
-          <img src="img/t4/trabajo4 (8).jpg" alt="">
-          <img src="img/t4/trabajo4 (9).jpg" alt="">
+          <img loading="lazy" src="img/t4/trabajo4 (1).jpg" alt="Montaje de estructuras y pasarelas galvanizadas">
+          <img loading="lazy" src="img/t4/trabajo4 (2).jpg" alt="">
+          <img loading="lazy" src="img/t4/trabajo4 (3).jpg" alt="">
+          <img loading="lazy" src="img/t4/trabajo4 (4).jpg" alt="">
+          <img loading="lazy" src="img/t4/trabajo4 (5).jpg" alt="">
+          <img loading="lazy" src="img/t4/trabajo4 (6).jpg" alt="">
+          <img loading="lazy" src="img/t4/trabajo4 (7).jpg" alt="">
+          <img loading="lazy" src="img/t4/trabajo4 (8).jpg" alt="">
+          <img loading="lazy" src="img/t4/trabajo4 (9).jpg" alt="">
         </div>
       </div>
 
       <div class="trabajo" data-galeria="5">
-        <img src="img/t5/trabajo5 (1).jpg" alt="">
+        <img loading="lazy" src="img/t5/trabajo5 (1).jpg" alt="Reparación de traca, espejo de proa y rasel">
         <div class="trabajo-info">
           <h4>Reparación de traca, espejo de proa y rasel</h4>
         </div>
         <!-- Galería oculta -->
         <div class="galeria-oculta">
-          <img src="img/t5/trabajo5 (1).jpg" alt="">
-          <img src="img/t5/trabajo5 (2).jpg" alt="">
-          <img src="img/t5/trabajo5 (3).jpg" alt="">
-          <img src="img/t5/trabajo5 (4).jpg" alt="">
-          <img src="img/t5/trabajo5 (5).jpg" alt="">
+          <img loading="lazy" src="img/t5/trabajo5 (1).jpg" alt="Reparación de traca, espejo de proa y rasel">
+          <img loading="lazy" src="img/t5/trabajo5 (2).jpg" alt="">
+          <img loading="lazy" src="img/t5/trabajo5 (3).jpg" alt="">
+          <img loading="lazy" src="img/t5/trabajo5 (4).jpg" alt="">
+          <img loading="lazy" src="img/t5/trabajo5 (5).jpg" alt="">
         </div>
       </div>
 
       <div class="trabajo" data-galeria="6">
-        <img src="img/t6/trabajo6 (1).jpg" alt="">
+        <img loading="lazy" src="img/t6/trabajo6 (1).jpg" alt="Fabricación y montaje de laterales de Deen planta fertilizantes">
         <div class="trabajo-info">
           <h4>Fabricación y montaje de laterales de Deen planta fertilizantes</h4>
         </div>
         <!-- Galería oculta -->
         <div class="galeria-oculta">
-          <img src="img/t6/trabajo6 (1).jpg" alt="">
-          <img src="img/t6/trabajo6 (2).jpg" alt="">
-          <img src="img/t6/trabajo6 (3).jpg" alt="">
-          <img src="img/t6/trabajo6 (4).jpg" alt="">
-          <img src="img/t6/trabajo6 (5).jpg" alt="">
+          <img loading="lazy" src="img/t6/trabajo6 (1).jpg" alt="Fabricación y montaje de laterales de Deen planta fertilizantes">
+          <img loading="lazy" src="img/t6/trabajo6 (2).jpg" alt="">
+          <img loading="lazy" src="img/t6/trabajo6 (3).jpg" alt="">
+          <img loading="lazy" src="img/t6/trabajo6 (4).jpg" alt="">
+          <img loading="lazy" src="img/t6/trabajo6 (5).jpg" alt="">
         </div>
       </div>
 
       <div class="trabajo" data-galeria="7">
-        <img src="img/t7/trabajo7a.jpg" alt="">
+        <img loading="lazy" src="img/t7/trabajo7a.jpg" alt="Dispensero para 16 bidones de 20 litros">
         <div class="trabajo-info">
           <h4>Dispensero para 16 bidones de 20 litros</h4>
         </div>
         <!-- Galería oculta -->
         <div class="galeria-oculta">
-          <img src="img/t7/trabajo7a.jpg" alt="">
-          <img src="img/t7/trabajo7b.jpg" alt="">
-          <img src="img/t7/trabajo7c.jpg" alt="">
-          <img src="img/t7/trabajo7d.jpg" alt="">
-          <img src="img/t7/trabajo7e.jpg" alt="">
-          <img src="img/t7/trabajo7f.jpg" alt="">
+          <img loading="lazy" src="img/t7/trabajo7a.jpg" alt="Dispensero para 16 bidones de 20 litros">
+          <img loading="lazy" src="img/t7/trabajo7b.jpg" alt="">
+          <img loading="lazy" src="img/t7/trabajo7c.jpg" alt="">
+          <img loading="lazy" src="img/t7/trabajo7d.jpg" alt="">
+          <img loading="lazy" src="img/t7/trabajo7e.jpg" alt="">
+          <img loading="lazy" src="img/t7/trabajo7f.jpg" alt="">
         </div>
       </div>
 
 
       <div class="trabajo" data-galeria="8">
-        <img src="img/t8/trabajo8a.jpg" alt="">
+        <img loading="lazy" src="img/t8/trabajo8a.jpg" alt="Impermeabilización de naves industriales">
         <div class="trabajo-info">
           <h4>Impermeabilización de naves industriales</h4>
         </div>
         <!-- Galería oculta -->
         <div class="galeria-oculta">
-          <img src="img/t8/trabajo8a.jpg" alt="">
-          <img src="img/t8/trabajo8b.jpg" alt="">
-          <img src="img/t8/trabajo8c.jpg" alt="">
+          <img loading="lazy" src="img/t8/trabajo8a.jpg" alt="Impermeabilización de naves industriales">
+          <img loading="lazy" src="img/t8/trabajo8b.jpg" alt="">
+          <img loading="lazy" src="img/t8/trabajo8c.jpg" alt="">
         </div>
       </div>
 
 
       <div class="trabajo" data-galeria="9">
-        <img src="img/t9/trabajo9a.jpg" alt="">
+        <img loading="lazy" src="img/t9/trabajo9a.jpg" alt="Venta y colocación de cercos, tapiales y portones livianos">
         <div class="trabajo-info">
           <h4>Venta y colocación de cercos, tapiales y portones livianos</h4>
         </div>
         <!-- Galería oculta -->
         <div class="galeria-oculta">
-          <img src="img/t9/trabajo9a.jpg" alt="">
-          <img src="img/t9/trabajo9b.jpg" alt="">
-          <img src="img/t9/trabajo9c.jpg" alt="">
-          <img src="img/t9/trabajo9d.jpg" alt="">
-          <img src="img/t9/trabajo9e.jpg" alt="">
-          <img src="img/t9/trabajo9f.jpg" alt="">
+          <img loading="lazy" src="img/t9/trabajo9a.jpg" alt="Venta y colocación de cercos, tapiales y portones livianos">
+          <img loading="lazy" src="img/t9/trabajo9b.jpg" alt="">
+          <img loading="lazy" src="img/t9/trabajo9c.jpg" alt="">
+          <img loading="lazy" src="img/t9/trabajo9d.jpg" alt="">
+          <img loading="lazy" src="img/t9/trabajo9e.jpg" alt="">
+          <img loading="lazy" src="img/t9/trabajo9f.jpg" alt="">
         </div>
       </div>
 
