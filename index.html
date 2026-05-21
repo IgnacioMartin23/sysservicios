@@ -350,16 +350,37 @@
         <p>sys-serviciossrl@hotmail.com</p>
       </div>
     </div>
-    <div class="form-header" >
-      <h3>Completa el formulario y contactanos</h3>
-    </div>
+    <div class="contact-form-container">
+      <div class="form-header">
+        <h3>Completa el formulario y contactanos</h3>
+        <p>Te responderemos a la brevedad.</p>
+      </div>
 
-    <form  id="contact-form" action="https://formsubmit.co/sys-serviciossrl@hotmail.com" method="POST" >
-      <input type="text" name="user_name" placeholder="Tu nombre" required>
-      <input type="email" name="user_email" placeholder="Tu correo" required>
-      <textarea name="message" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+      <form id="contact-form">
+        <div class="input-group">
+          <input type="text" id="user_name" name="name" placeholder="Tu nombre" required>
+        </div>
+        <div class="input-group">
+          <input type="email" id="user_email" name="email" placeholder="Tu correo electrónico" required>
+        </div>
+        <div class="input-group">
+          <textarea id="message" name="message" placeholder="Tu mensaje" rows="4" required></textarea>
+        </div>
+        <!-- IMPORTANTE: El honeypot de FormSubmit para evitar spam -->
+        <input type="text" name="_honey" style="display:none">
+        
+        <button type="submit" id="submit-btn">
+          <i class="fas fa-paper-plane"></i> <span>Enviar Mensaje</span>
+        </button>
+      </form>
+      
+      <!-- Mensaje de éxito oculto -->
+      <div id="form-status" class="form-status hidden">
+        <i class="fas fa-check-circle"></i>
+        <h4>¡Mensaje enviado con éxito!</h4>
+        <p>Nos pondremos en contacto contigo muy pronto.</p>
+      </div>
+    </div>
   </section>
 
   <section id="mapa" class="section bg-light">
@@ -390,6 +411,11 @@
       </div>
     </div>
   </footer>
+
+  <!-- Botón de WhatsApp Flotante -->
+  <a href="https://wa.me/3407494506" class="whatsapp-flotante" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

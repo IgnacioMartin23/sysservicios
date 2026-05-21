@@ -65,3 +65,49 @@ document.addEventListener('keydown', e => {
       break;
   }
 });
+
+// --- Formulario de Contacto por AJAX (FormSubmit) ---
+const contactForm = document.getElementById('contact-form');
+const submitBtn = document.getElementById('submit-btn');
+const formStatus = document.getElementById('form-status');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault(); // Evita la recarga o redirección
+
+    // Cambiar estado del botón
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Enviando...</span>';
+    submitBtn.disabled = true;
+
+    // Obtener los datos del formulario
+    const formData = new FormData(contactForm);
+
+    // Enviar datos por Fetch API
+    fetch('https://formsubmit.co/ajax/sys-serviciossrl@hotmail.com', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        // Ocultar formulario y mostrar mensaje de éxito
+        contactForm.classList.add('hidden');
+        document.querySelector('.form-header').classList.add('hidden');
+        formStatus.classList.remove('hidden');
+      } else {
+        alert('Hubo un problema al enviar el mensaje. Inténtalo nuevamente.');
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+      }
+    })
+    .catch(error => {
+      alert('Error de conexión. Inténtalo nuevamente.');
+      submitBtn.innerHTML = originalText;
+      submitBtn.disabled = false;
+    });
+  });
+}
